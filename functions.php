@@ -134,3 +134,13 @@ $postTypes = glob(dirname(__FILE__) . '/post-types/*.php');
 foreach ($postTypes as $pst) {
     require_once($pst);   
 }
+
+
+/**
+ *
+ * Get Taxonomies for LeKidsClub
+ */
+$taxonomies = glob(dirname(__FILE__) . '/post-types/taxonomies/*.php');
+foreach ($taxonomies as $taxonomy) {
+    require_once($taxonomy);   
+}
