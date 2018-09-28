@@ -114,3 +114,23 @@ if (file_exists(dirname(__FILE__).'/functions/extras.php')) {
 if (file_exists(dirname(__FILE__).'/functions/template-functions.php')) {
     require_once( dirname(__FILE__).'/functions/template-functions.php' );
 }
+
+
+/**
+ *  Functions Cadastro 
+ *
+ * @since 1.0.0
+ */
+if (file_exists(dirname(__FILE__).'/cadastro/functions-cadastro.php')) {
+    require_once( dirname(__FILE__).'/cadastro/functions-cadastro.php' );
+}
+
+
+/**
+ *
+ * Get Post-Types for LeKidsClub
+ */
+$postTypes = glob(dirname(__FILE__) . '/post-types/*.php');
+foreach ($postTypes as $pst) {
+    require_once($pst);   
+}
