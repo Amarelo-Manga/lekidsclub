@@ -27,5 +27,5 @@ function genero_taxonomies() {
 		'rewrite'           => array( 'slug' => 'genero' ),
 	);
 
-	register_taxonomy( 'genero_crianca', array( 'crincas' ), $args );
+	register_taxonomy( 'genero_crianca', array( 'criancas' ), $args );
 }
