@@ -1,0 +1,1 @@
+archive-parcerias.php
