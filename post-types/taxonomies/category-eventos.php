@@ -25,6 +25,7 @@ function category_eventos_taxonomies() {
 		'show_admin_column' => true,
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'category_eventos' ),
+		'show_in_nav_menus' => false,
 	);
 
 	register_taxonomy( 'category_eventos', array( 'eventos' ), $args );

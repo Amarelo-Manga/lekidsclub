@@ -25,6 +25,7 @@ function category_dicas_taxonomies() {
 		'show_admin_column' => true,
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'category_dicas' ),
+		'show_in_nav_menus' => false,
 	);
 
 	register_taxonomy( 'category_dicas', array( 'dicas' ), $args );

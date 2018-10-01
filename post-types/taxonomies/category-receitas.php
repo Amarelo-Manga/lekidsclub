@@ -25,6 +25,7 @@ function category_receitas_taxonomies() {
 		'show_admin_column' => true,
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'category_receitas' ),
+		'show_in_nav_menus' => false,
 	);
 
 	register_taxonomy( 'category_receitas', array( 'receitas' ), $args );

@@ -25,6 +25,7 @@ function genero_taxonomies() {
 		'show_admin_column' => true,
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'genero' ),
+		'show_in_nav_menus' => false,
 	);
 
 	register_taxonomy( 'genero_crianca', array( 'criancas' ), $args );
