@@ -1,0 +1,243 @@
+#subHeader{
+	height: 50px;
+    background: #f8f8f8;
+    text-align: right;
+    padding: 4px 10%;
+	aside{
+		display: inline-block;
+	}
+	.icon{
+		height: 35px;
+	    width: 35px;
+	    display: inline-block;
+	    border-radius: 50px;
+	    margin: 5px;
+	    color: #fff;
+	    padding-top: 4px;
+	    font-size: 1.2rem;
+	    text-align: center;
+		&.facebook{
+			background: #3B5999;
+		}
+
+		&.instagram{
+			background: #A219C1;
+		}
+	}
+	.col-lg-3{
+		flex: 0 0 28%;
+    	max-width: 28%;
+	}
+
+	.btn_perfil{
+		display: inline-block;
+	}
+}
+
+#logo{
+	max-width:14%;
+	margin-top: 12px;
+	img{
+		max-width: 100%;
+	}
+}
+#header{
+	background: #fff;
+	.menu{
+		max-width: 70%;
+		flex: 0 0 70%;
+		padding: 0px;
+		nav{
+			padding: 4px 0px;
+			margin: 6px 0 0px;
+		}
+		.navbar-nav{
+			margin: 20px auto 0px;
+		}
+	}
+	.icon{
+		a{
+			padding: 0px 8px;
+    		padding-top: 33px;
+    		margin: 4px 5px 0px;
+			background: url('../images/sprites_icones_menu.png');
+			background-repeat: no-repeat;
+			display: block;
+			font-family: 'Baloo';
+			color: #808080;
+			text-transform: uppercase;
+    		font-size: .9rem;
+    		&:hover{
+    			text-decoration:none;
+    		}
+		}
+		&.home{
+			a{
+				background-position: -4px -16px;
+				&:hover{
+					background-position: -4px -69px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -4px -69px;
+				}
+			}
+		}
+
+		&.funciona{
+			a{
+				background-position: -55px -15px;
+				&:hover{
+					background-position: -55px -68px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -55px -68px;
+				}
+			}
+		}
+
+		&.ofertas{
+			a{
+				background-position: -169px -15px;
+				&:hover{
+					background-position: -169px -68px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -169px -68px;
+				}
+			}
+		}
+
+		&.eventos{
+			a{
+				background-position: -260px -15px;
+				&:hover{
+					background-position: -260px -68px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -260px -68px;
+				}
+			}
+		}
+
+		&.dicas{
+			a{
+				background-position: -350px -14px;
+				&:hover{
+					background-position: -350px -67px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -350px -67px;
+				}
+			}
+		}
+
+		&.receitas{
+			a{
+				background-position: -418px -15px;
+				&:hover{
+					background-position: -418px -68px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -418px -68px;
+				}
+			}
+		}
+
+		&.parcerias{
+			a{
+				background-position: -508px -13px;
+				&:hover{
+					background-position: -508px -66px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -508px -66px;
+				}
+			}
+		}
+
+		&.turminha{
+			a{
+				background-position: -598px -14px;
+				&:hover{
+					background-position: -598px -67px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -598px -67px;
+				}
+			}
+		}
+
+		&.jogos{
+			a{
+				background-position: -698px -14px;
+				&:hover{
+					background-position: -698px -67px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -698px -67px;
+				}
+			}
+		}	
+
+		&.contato{
+			a{
+				background-position: -778px -13px;
+				&:hover{
+					background-position: -778px -66px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -778px -66px;
+				}
+			}
+		}
+
+		&.parceiro{
+			a{
+				background-position: -841px -14px;
+				&:hover{
+					background-position: -841px -67px;
+				}
+			}
+			&.current-menu-item{
+				a{
+					background-position: -841px -67px;
+				}
+			}
+		}
+	}
+}
+#logo_leclub{
+	padding: 0px;
+    margin: 0px;
+    max-width: 14%;
+	.alignnone{
+		margin:0px;
+		padding: 0px;
+		width: 100%;
+	}
+}
+header{
+	.container-fluid{
+		padding: 0px 15px;
+	}
+}

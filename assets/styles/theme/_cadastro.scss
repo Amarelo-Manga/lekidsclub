@@ -1,0 +1,500 @@
+.modal-shortcode{
+	text-align:left;
+}
+
+.loading{
+	background: url('../images/loading.gif');
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.modal{
+	font-family: lato;
+	font-weight: 300;
+	.modal-header{
+		display: inline;
+	    border: 0px;
+	    text-align: right;
+	    button{
+	    	position: absolute;
+		    top: -5px;
+		    right: 5px;
+		    z-index: 999;
+	    }
+	}
+	.modal-body{
+		padding:15px;
+		margin-top:-30px;
+	}
+	h3{
+		margin-top: 20px;
+		margin-bottom: 30px;
+		clear:both;
+		line-height: 20px;
+		&:before{
+			content: "";
+		    display: inline-block;
+		    background: url(../images/sprites_icones.png);
+		    background-repeat: no-repeat;
+		    background-size: 1270px;
+		    width: 65px;
+		    height: 65px;
+		    vertical-align: middle;
+		    margin-right: 10px;
+		    float: left;
+		    margin-top: -15px;
+		}
+		span{
+			display: inline-block;
+			max-width: 630px;
+		    font-family: lato;
+		    font-weight: 600;
+    		font-size: 0.8rem;
+		}
+	}
+	a{
+		color:$rosa;
+	}
+	.btn_verde{
+		margin:0px;
+	}
+	.form-group{
+		margin-bottom: 0.5rem;
+	}
+}
+
+#modalLogin{
+	h3{
+		&:before{
+			background-position: -1025px -24px;
+		}
+	}
+	.modal-dialog{
+		max-width:410px;
+	}
+	#rememberme{
+		width: auto;
+	}
+}	
+
+#modalCrianca{
+	.header{
+		padding: 20px;
+	}
+	h3{
+		font-size: 1.4rem;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		&:before{
+			background-position: -28px -22px;
+		    background-size: 1160px;
+		    width: 60px;
+		    height: 60px;
+		    margin-top: -20px;
+		    margin-right: 8px;
+		}
+	}
+	h4{
+		font-family: lato;
+	    font-size: 0.9rem;
+	    font-weight: 400;
+	    margin-left: 10px;
+	    display: inline-block;
+    	float: left;
+	}
+	.modal-dialog{
+		max-width:350px;
+	}
+	p{
+		padding: 10px;
+    	max-width: 550px;
+    	font-weight: 600;
+    	font-size: 0.8rem;
+	}
+
+	.crianca{
+		border-radius: 5px;
+		padding: 15px;
+		margin-bottom: 20px;
+		@include boxshadow;
+	}
+	.btn_verde{
+		margin-bottom: 10px;
+	}
+	.btn_rosa{
+		float: right;
+	    margin-bottom: 10px;
+	    margin-top: -5px;
+	    font-size: 0.65rem;
+	    padding: 6px 10px;
+	}
+}
+
+
+#modalCadastro{
+	h3{
+		margin-bottom: 20px;
+		&:before{
+			background-position: -31px -24px;
+		}
+	}
+	h4{
+		font-size: 1.2rem;
+		margin-top: 5px;
+		margin-bottom: 0px;
+	}
+	p{
+		padding: 3px;
+    	max-width: 550px;
+    	font-weight: 600;
+    	font-size: 0.8rem;
+    	margin: 0px;
+	}
+	.modal-dialog{
+		max-width: 750px;
+	}
+	.inline{
+		display: inline-block;
+		margin: 0px;
+	}
+	#cep{
+		max-width: 74%;
+	}
+	#numero{
+		max-width: 24%;
+	}
+
+	#cidade{
+		max-width: 74%;	
+	}
+	#estado{
+		max-width: 24%;
+	}
+	select{
+		max-height: 50px;
+	    background: url(../images/carret_down.png);
+	    background-size: 25px;
+	    background-repeat: no-repeat;
+	    background-position: 49px center;
+	    cursor: pointer;
+	}
+}
+
+#pesonagensForm{
+	.personagem{
+		display: inline-block;
+		margin: 4px;
+		background: url('../images/sprites_personagens_shadow.png');
+		background-size: 490px;
+    	width: 70px;
+    	height: 82px;
+    	cursor: pointer;
+
+    	&:hover{
+    		border-top-left-radius: 0px;
+    		border-top-right-radius: 0px;
+    	}
+
+		&.heloisa{
+    		background-position: -25px -23px;
+			&:hover{
+    			background-position: -25px 110px;
+			}
+			&.active{
+				background-position: -25px 110px;
+			}
+		}
+
+		&.milu{
+			background-position: -141px -22px;
+			&:hover{
+				background-position: -141px 111px;
+			}
+			&.active{
+				background-position: -141px 111px;
+			}
+		}
+
+		&.alicia{
+			background-position: -263px -22px;
+			&:hover{
+				background-position: -263px 111px;
+			}
+			&.active{
+				background-position: -263px 111px;
+			}
+		}
+
+		&.louis{
+			background-position: -380px -24px;
+			&:hover{
+				background-position: -380px 110px;
+			}
+			&.active{
+				background-position: -380px 110px;
+			}
+		}
+	}
+}
+
+.criancaHide{
+	display:none;
+}
+
+#mensagem{
+	h3{
+		font-size: 1.2rem;
+	    font-family: lato;
+	    font-weight: 300;
+	    margin: 10px;
+		&:before{
+			display: none;
+		}
+	}
+	display: none;
+	background: $rosa;
+    padding: 7px 10px 4px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#cadastro{
+	header{
+		background: $azulE;
+		padding-bottom: 40px;
+		background-size: auto 100%;
+    	background-position-x: left;
+		h4{
+			font-family: lato;
+			color: $verde;
+			font-size: 1rem;
+			margin-bottom: 15px;
+			span{
+				font-family: lato;
+				color: #fff;
+				display: block;
+				font-size: 1rem;
+				font-weight:300;
+			}
+		}
+		h3{
+			color: $verde;
+			font-size: 1.2rem;
+			margin: 40px 0px;
+			span{
+				font-family: lato;
+				color: #fff;
+				display: block;
+				font-size: 1.1rem;
+			}
+			&:before{
+				background: url('../images/sprites_personagens_shadow.png');
+				width: 80px;
+			    height: 80px;
+			    margin-top: -17px;
+			    margin-bottom: 0px;
+			}
+		}
+		&.heloisa{
+			background-image: url('../images/desktop_perfil_helo_bg.png');
+			h3{
+				&:before{
+					background-position: -29px 124px;
+				}
+			}
+		}
+		&.milu{
+			background-image: url('../images/desktop_perfil_milu_bg.png');
+			h3{
+				&:before{
+					background-position: -163px 119px;
+				}
+			}
+		}
+		&.alicia{
+			background-image: url('../images/desktop_perfil_alicia_bg.png');
+			h3{
+				&:before{
+					background-position: -287px 124px;
+				}
+			}
+		}
+		&.louis{
+			background-image: url('../images/desktop_perfil_louis_bg.png');
+			h3{
+				&:before{
+					background-position: -420px 120px;
+				}
+			}
+		}
+		.btn_verde{
+			display: inline-block;
+    		margin: 10px 2px;
+		}
+	}
+	#formCrianca{
+		width: 100%;
+	}
+	.content{
+		background: url('../images/pattern.jpg');
+		padding:40px 20px;
+		.crianca{
+			border-radius: 5px;
+			padding: 15px;
+			margin-bottom: 20px;
+			background: #fff;
+			@include boxshadow;
+			h5{
+				color: $azulC;
+				font-size: 0.96rem;
+				margin:12px 0px;
+				span{
+					font-family: lato;
+					color: #000;
+					display: block;
+					font-size: 1rem;
+					font-weight: 400;
+				}
+			}
+			.btn_verde{
+				font-size: .65rem;
+    			padding: 10px 8%;
+    			margin-top: 20px;
+			}
+			.btn_rosa{
+				font-size: .65rem;
+    			padding: 10px 18%;
+			}
+		}
+		.btn_verde{
+			margin: 0px;
+		}
+		.btn_rosa{
+			width: auto;
+		    max-width: max-content;
+		    padding: 11px 40px;
+		    margin-top: 10px;
+		}
+		.form{
+			display: none;
+			h4{
+				font-size: 1rem;
+			}
+			.btn_verde{
+				display: inline-block;
+				margin-top: 10px;
+			}
+			.btn_rosa{
+				display: inline-block;
+				font-weight: 500;
+    			padding: 10px 10%;
+			}
+		}
+	}
+
+	.criancaadd{
+		.btn_rosa{
+			display: inline-block;
+		}
+	}
+}
+
+#modalEditCadastro{
+	.modal-dialog{
+		max-width: 950px;
+		overflow: hidden;
+	}
+	h3{
+		color: #000;
+		margin: 0px;
+    	font-size: 1.2rem;
+		&:before{
+			display: none;
+		}
+	}
+	#mensagem{
+		h3{
+			color: #fff;
+			font-weight: 500;
+			margin: 10px;
+		}
+	}
+	h4{
+		color: #000;
+		font-size: 1rem;
+	}
+	.cadastro{
+		padding: 10px 15px 10px 30px;
+	}
+
+	.endereco{
+		padding:25px 23px 10px 10px;
+		input, select{
+			margin-bottom: 8px;
+		}
+	}
+	#pesonagensForm{
+		.personagem{
+			width: 100px;
+			height: 106px;
+			background-size: 630px;
+			&.heloisa{
+				background-position: -26px -24px;
+				&:hover{
+					background-position: -26px 149px;
+				}
+				&.active{
+					background-position: -26px 149px;
+				}
+			}
+			&.milu{
+				background-position: -172px -24px;
+				&:hover{
+					background-position: -172px -157px;
+				}
+				&.active{
+					background-position: -172px -157px;
+				}
+			}
+			&.alicia{
+				background-position: -332px -25px;
+				&:hover{
+					background-position: -332px -161px;
+				}
+				&.active{
+					background-position: -332px -161px;
+				}
+			}
+			&.louis{
+				background-position: -484px -25px;
+				&:hover{
+					background-position: -484px -161px;
+				}
+				&.active{
+					background-position: -484px -161px;
+				}
+			}
+		}
+	}
+
+	.avatar{
+		background: rgb(241, 239, 239);
+    	margin-top: -30px;
+    	padding-top: 40px;
+    	padding-left: 10px;
+	}
+	.btn_rosa{
+		display: inline-block;
+	}
+}
+
+#modalMensagem{
+	.contentModal{
+		padding: 0px 15px 15px;
+		.btn_rosa{
+			display: inline-block;
+			margin-left: 10px;
+		}
+	}
+}

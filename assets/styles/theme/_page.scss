@@ -1,9 +1,131 @@
-h3{
-	font-family: 'Baloo';
-}
-p{
-	font-family: 'Lato';
-  	font-style: normal;
+#quemsomos{
+	background: url('../images/pattern.jpg');
+	.container-fluid{
+		padding: 0px 15px 0px;
+	}
+	.personagens{
+		margin-top:-15%;
+		img{
+			width:100%;
+		}
+	}
+
+	#content{
+		text-align: center;
+		.icon{
+			background: url(../images/sprites_icones.png);
+			background-position: 186px -131px;
+		    background-size: 1500px;
+		    width: 80px;
+		    height: 80px;
+		    display: inline-block;
+		    margin: 0 auto;
+		    margin-top: -60px;
+		    margin-bottom:60px;
+		}
+	}
 }
 
-@include boxshadow;
+#jogos{
+	article{
+		max-width: 47%;
+	}
+	header{
+		h3{
+			&:before{
+				background-position: -276px -79px;
+    			background-size: 900px;
+			}
+		}
+	}
+}
+
+#contato{
+	article{
+		max-width: 100%;
+	}
+	.wpcf7{
+		width: 100%;
+	}
+	.col-lg-4{
+		float: left;
+	}
+	p{
+		margin-left: 20px;
+	}
+	header{
+		h3{
+			&:before{
+				background-position: -213px -79px;
+    			background-size: 900px;
+			}
+		}
+	}
+}
+
+#parceiro{
+	article{
+		max-width: 100%;
+	}
+	.wpcf7{
+		width: 100%;
+	}
+	.col-lg-4{
+		float: left;
+	}
+	p{
+		margin-left: 20px;
+	}
+	textarea{
+		max-height: 115px;
+	}
+	header{
+		h3{
+			&:before{
+				background-position: -149px -79px;
+    			background-size: 900px;
+			}
+		}
+	}
+}
+
+form, .form{
+	input, textarea, select{
+		font-family: Lato;
+		background: #fff;
+		margin: 2px;
+		padding: 15px;
+		border-radius: 5px;
+		outline: inherit;
+		width: 100%;
+		@include boxshadow;
+		&.btn_verde{
+			width: auto;
+		}
+		&:disabled{
+			background: #e2e2e2;
+		}
+	}
+	.wpcf7-validates-as-required{
+		border-right: 4px solid $rosa;
+	}
+	.required{
+		border-right: 4px solid $rosa;
+	}
+
+	textarea{
+		max-height: 171px;
+	}
+}
+#login{
+	header{
+		h3{
+			&:before{
+				background-position: -74px -70px;
+			}
+		}
+	}
+	h3{
+		display: block;
+	}
+}

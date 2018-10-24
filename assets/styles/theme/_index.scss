@@ -1,0 +1,117 @@
+#home{
+	h3{
+		&:before{
+			content: "";
+		    display: inline-block;
+		    background: url(../images/sprites_icones.png);
+		    background-repeat: no-repeat;
+		    background-size: 1270px;
+		    width: 65px;
+		    height: 65px;
+		    vertical-align: middle;
+		    margin-right: 10px;
+		}
+	}
+	#banner{
+		padding: 0px;
+	}
+	section{
+		padding:40px 0px;
+		article{
+			overflow: hidden;
+		    border-radius: 5px;
+		    margin: 10px;
+		    max-width: 23%;
+		    padding: 0px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	#ofertas{
+		h3{
+			color: #000;
+			span{
+				color: $azulC;
+			}
+			&:before{
+				margin-bottom: 5px;
+    			background-position-x: -844px;
+    			background-position-y: -24px;
+			}
+		}
+		a{
+			margin:0 auto;
+		}
+	}
+
+	#dicas{
+		background: url(../images/milu-home.png),url(../images/bg-home-dicas.jpg);
+	    background-position: -10% 0%,left top;
+	    background-repeat: no-repeat, repeat;
+	    background-color: #34499c;
+		#milu{
+			padding-left: 17%;
+    		margin-top: 30px;
+		}
+		h3{
+			color: #fff;
+			margin-bottom: 30px;
+			span{
+				color: $verde;
+			}
+			&:before{
+				float: left;
+				background-position: -754px -113px;
+			}
+		}
+		article{
+			max-width: 31%;
+		}
+
+	}
+	#receita_jogos{
+		padding: 20px 0px;
+		section{
+			margin:0px 10px;
+			border-radius: 5px;
+			max-width: 48%;
+			padding: 30px 0px;
+		}
+	}   
+
+	#receitas{
+		background: url('../images/bg-home-receitas.jpg');
+		.content{
+			float: right;
+    		margin-right: 10%;
+		}
+		h3{
+			color: #fff;
+			margin-bottom: 20px;
+			&:before{
+				background-position: -574px -113px;
+			}
+		}
+	}
+
+	#jogos{
+		background: url('../images/bg-home-jogos.jpg');
+		.content{
+			margin-left:10%;
+			padding-bottom: 30%;
+		}
+		h3{
+			color: #fff;
+			margin-bottom: 20px;
+			span{
+				display: block;
+				color: $verde;
+			}
+			&:before{
+				float:left;
+				background-position: -394px -112px;
+			}
+		}
+	}
+}

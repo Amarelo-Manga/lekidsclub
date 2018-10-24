@@ -1,0 +1,111 @@
+.archives{
+	background: url('../images/pattern.jpg');
+	header{
+		background: $azulC;
+		padding: 18px 0px 5px;
+    	margin-bottom: 30px;
+		#crumbs{
+			margin-bottom: 10px;
+			color: #fff;
+			font-family: lato;
+			a{
+				color: #fff;
+				font-weight: 300;
+				&:hover{
+					text-decoration:none;
+					color: $verde;
+				}
+			}
+			.current{
+				font-weight: 600;
+			}
+		}
+		h3{
+			margin-top: 20px;
+			margin-bottom: 30px;
+			color: #000;
+			clear:both;
+			color:#fff;
+			line-height: 20px;
+			&:before{
+				content: "";
+			    display: inline-block;
+			    background: url(../images/sprites_icones.png);
+			    background-repeat: no-repeat;
+			    background-size: 810px;
+			    width: 48px;
+			    height: 48px;
+			    vertical-align: middle;
+			    margin-right: 10px;
+			    margin-bottom: 25px;
+			    margin-top: -6px;
+			    float: left;
+			}
+			span{
+				display: inline-block;
+			    font-weight: 400;
+			    font-family: lato;
+			    font-size: 1rem;
+			}
+		}
+	}
+	article{
+		max-width:24%;
+		img{
+			width: 100%;
+		}
+		overflow:hidden;
+		border-radius: 5px;
+		padding: 0px;
+		margin: 7px;
+	}
+}
+
+#ofertas{
+	header{
+		h3{
+			&:before{
+				background-position-x: -533px;
+    			background-position-y: -69px;
+			}
+		}
+	}
+}
+
+#eventos{
+	header{
+		h3{
+			&:before{	
+				background-position-x: -477px;
+    			background-position-y: -70px;
+			}
+		}
+	}
+}
+
+#dicas{
+	h3{
+		&:before{	
+			background-position-x: -534px;
+    		background-position-y: -71px;
+		}
+	}
+}
+
+#receitas{
+	h3{
+		&:before{	
+			background-position-x: -363px;
+    		background-position-y: -72px;
+		}
+	}
+}
+
+#parcerias{
+	h3{
+		&:before{	
+			background-position-x: -308px;
+    		background-position-y: -70px;
+		}
+	}
+}

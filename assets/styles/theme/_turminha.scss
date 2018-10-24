@@ -1,0 +1,96 @@
+#turminha{
+	background: url('../images/turminha_bg.jpg');
+	.container-fluid{
+		padding: 0px 15px;
+	}
+	header{
+		background: transparent;
+		h3{
+			&:before{
+    			background-position: -662px -16px;
+    			background-size: 900px;
+			}
+		}
+	}
+	#escolha{
+		li{
+			list-style: none;
+			margin-bottom: 10px;
+		}
+		.persona{
+			font-family: 'Baloo';
+			font-size: 1.2rem;
+			color: #fff;
+			border-radius: 50px;
+			margin-bottom: 25px;
+			width: 205px;
+		    height: 104px;
+		    padding-left: 40px;
+		    border: 7px solid transparent;
+		    outline: inherit;
+			.icon{
+				display: inline-block;
+			    width: 120px;
+			    height: 120px;
+			    overflow: hidden;
+			    position: absolute;
+			    margin-left: -58px;
+    			margin-top: -60px;
+			    img{
+			    	width: 210px;
+				    margin-left: -41px;
+				    margin-top: -36px;
+			    }
+			}
+			.nome{
+				width: 100%;
+    			display: inline-block;
+    			padding-left: 64px;
+    			text-align: left;
+			}
+			&.active{
+				border: 7px solid $verde;
+				.icon{
+					img{
+						margin-left: -41px;
+    					margin-top: -210px;
+					}
+				}
+			}
+			&:hover{
+				border: 7px solid $verde;
+				.icon{
+					img{
+						margin-left: -41px;
+    					margin-top: -210px;
+					}
+				}
+			}
+		}
+	}
+
+	#personagem{
+		img{
+			display: none;
+			width: 100%;
+			margin-top: -90px;
+		}
+		[data="heloisa"]{
+			display: block;
+		}
+	}
+
+	#descricao{
+		.content{
+			display: none;
+			color: #fff;
+			h3{
+				color: $verde;
+				font-size: 1.4rem;
+			}
+		}
+		[data="heloisa"]{
+			display: block;
+		}
+	}
+}
