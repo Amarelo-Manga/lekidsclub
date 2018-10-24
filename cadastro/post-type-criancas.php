@@ -22,7 +22,7 @@ function criancas_post_type() {
 		'description'         => __( 'Crianças', 'fvw' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'thumbnail', ),
-		'taxonomies'          => array( 'genero_crianca' ),
+		'taxonomies'          => array( 'estado' ),
 		'hierarchical'        => false,
 		'public'              => false,
 		'show_ui'             => true,

@@ -19,8 +19,28 @@ if ( ! defined( 'WPINC' ) ) { die; }
  */
 function widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'neat' ),
-		'id'            => 'aa_sidebar_1',
+		'name'          => esc_html__( 'Social Top', 'neat' ),
+		'id'            => 'social_top',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Cadastro Top', 'neat' ),
+		'id'            => 'cadastro_top',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Logo LeClub', 'neat' ),
+		'id'            => 'logo_leclub',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

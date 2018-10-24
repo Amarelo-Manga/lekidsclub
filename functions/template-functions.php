@@ -230,3 +230,19 @@ function theme_prefix_setup() {
     add_theme_support( 'custom-logo' );
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
+
+
+/**
+ * Add Class Current in menu for single for archive
+ */
+function filter_handler( $classes, $item, $args, $depth ) { 
+	global $post;
+	$menu_item = $classes[1];
+	$post_active = $post->post_type;
+
+	if( $menu_item == $post_active ){
+		$classes[] = 'current-menu-item';
+	}; 
+	return $classes;
+}
+add_filter( 'nav_menu_css_class', 'filter_handler', 10, 4 ); 

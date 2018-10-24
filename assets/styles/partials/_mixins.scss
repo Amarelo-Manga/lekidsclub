@@ -103,8 +103,11 @@
  /*
   * Box Shadow
   */
-  @mixin boxshadow{
-  	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
-  }
+$black: rgb(0,0,0);
+$alpha:  .16;
+$blackAlpha: rgba($black, $alpha);
+@mixin boxshadow{
+	-webkit-box-shadow: 0px 5px 10px 0px  $blackAlpha;
+    -moz-box-shadow: 0px 5px 10px 0px  $blackAlpha;
+	box-shadow: 0px 5px 10px 0px  $blackAlpha;
+}

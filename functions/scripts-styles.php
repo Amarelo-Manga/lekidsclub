@@ -40,15 +40,11 @@ function aa_scripts()
          *     Order is important
          *
          */
-        wp_register_script('jqueryjs', get_template_directory_uri() . '/dist/scripts/jquery.js'); // Custom scripts
-        wp_enqueue_script('jqueryjs'); // Enqueue it!
+        // wp_register_script('jqueryjs', get_template_directory_uri() . '/dist/scripts/jquery.js'); // Custom scripts
+        // wp_enqueue_script('jqueryjs'); // Enqueue it!
 
         wp_register_script('mainjs', get_template_directory_uri() . '/dist/scripts/main.js'); // Custom scripts
         wp_enqueue_script('mainjs'); // Enqueue it!
-
-      
-
-
     }
 }
 

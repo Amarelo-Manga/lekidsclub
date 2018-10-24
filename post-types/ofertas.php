@@ -23,7 +23,7 @@ function ofertas_post_type() {
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt'),
 		'taxonomies'          => array( 'category_ofertas' ),
-		'hierarchical'        => false,
+		'hierarchical'        => true,
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,

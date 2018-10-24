@@ -115,6 +115,23 @@ if (file_exists(dirname(__FILE__).'/functions/template-functions.php')) {
     require_once( dirname(__FILE__).'/functions/template-functions.php' );
 }
 
+/**
+ *  Options tehma
+ *
+ * @since 1.0.0
+ */
+if (file_exists(dirname(__FILE__).'/functions/options-thema.php')) {
+    require_once( dirname(__FILE__).'/functions/options-thema.php' );
+}
+
+/**
+ * Template Functions for Breadcrumbs.
+ * wp_custom_breadcrumbs();
+ * @since 1.0.0
+ */
+if (file_exists(dirname(__FILE__).'/functions/breadcrumbs.php')) {
+    require_once( dirname(__FILE__).'/functions/breadcrumbs.php' );
+}
 
 /**
  *  Functions Cadastro 

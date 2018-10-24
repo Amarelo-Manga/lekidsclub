@@ -10,8 +10,6 @@
 
 	<div class="aa_single__meta">
 
-		<?php aa_posted_on(); ?>
-
 	</div>
 	<!-- /.aa_single__meta -->
 
